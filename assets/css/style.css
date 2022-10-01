@@ -140,7 +140,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   overflow-x: hidden;
-  height: 300vh;
+ 
 }
 
 body.active { overflow-y: hidden;}
@@ -233,6 +233,7 @@ body.active { overflow-y: hidden;}
   transition: var(--transition-1);
 }
 
+.navbar-link:is(:hover, :focus) { color: var(--winter-sky);}
 
 /*-----------------------------------*\
   #HERO
