@@ -25,8 +25,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
  <!-- 
-    prelod image
+    preload image
   -->
+<link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
 </head>
 
 <body>
@@ -86,10 +88,23 @@
                  <p class="hero-text">Tatal Confirmed Corona Cases</p>
                  <data class="counter" value="960708">960708</data>
                  <ul class="hero-list">
-                    <li class="hero-list-item yellow"></li>
+                    <li class="hero-list-item yellow">
+                        Active cases <span class="span">799571</span>
+                    </li>
+                    <li class="hero-list-item yellow">
+                        Recovered cases <span class="span">302826</span>
+                    </li>   <li class="hero-list-item yellow">
+                        Deaths <span class="span">52558</span>
+                    </li>
                  </ul>
 
+
+                 <a href="" class="btn btn-primary">Meet The Doctor</a>
               </div>  
+
+              <figure class="hero-banner">
+                <img src="./assets/images/hero-banner.png" width="570" height="560" alt="corona virus" class="w-100">
+              </figure>
             </div>
             </section>
             </article>

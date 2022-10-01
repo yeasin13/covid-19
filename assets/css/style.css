@@ -158,7 +158,17 @@ body.active { overflow-y: hidden;}
 .container {
   padding-inline: 15px;
 }
+.section { padding-block: var(--section-padding) ; }
+.has-bg-image { 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ }
 
+ .h1,
+ .h2,
+ .h3,
+ .h4 { line-height: 1.4;}
 
 
 /*-----------------------------------*\
