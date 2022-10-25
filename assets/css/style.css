@@ -610,3 +610,78 @@ body.active { overflow-y: hidden;}
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+/* 
+responsive for large then 575px screen
+ */
+
+ @media (min-width: 575px) {
+  /* 
+  CUSTOM PROPERTY
+   */
+   :root {
+    /* 
+    typography
+    */
+    --fs-2: 3.6rem;
+    --fs-3: 2.4rem;
+   }
+
+   /* 
+   REUSED STYLE
+   */
+   .container {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+   }
+
+   .h2 {font-size: var(--fs-1);}
+   .h4 {--fs-4: 2rem;}
+
+   .text {font-size: unset;}
+
+ 
+
+ /* 
+ HERO
+ */
+ .hero-list {max-width:275px ;}
+
+ /* 
+ Safety, footer
+  */
+  .safety-list
+  ,.footer-top {grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 
+responsive for large then 768px screen
+ */
+
+ @media (min-width: 768px) {
+
+  /* 
+  REUSED STYLE
+   */
+   .container {max-width: 720px;
+  }
+  .gird-list {grid-template-columns: 1fr 1fr;}
+
+  /* 
+  HERO
+  */
+  .hero .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+  }
+  /* ABOUT */
+  .about-banner {max-width: max-content;}
+  /* Service */
+  .service-list {grid-template-columns: 1fr 1fr;}
+
+ }
+
+
