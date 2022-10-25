@@ -547,7 +547,7 @@ body.active { overflow-y: hidden;}
 }
 
 .footer-list-title,
-.footer-text {margin-block-end: 15px;}
+.footer-text {margin-block-start: 15px;}
 
 .contact-item {
   display: flex;
@@ -583,6 +583,25 @@ body.active { overflow-y: hidden;}
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
+
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: var(--winter-sky);
+  font-size: 18px;
+  padding: 12px;
+  border-radius: var(--radius-circle);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+  z-index: 4;
+}
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
 
 
 
